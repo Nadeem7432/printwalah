@@ -7,12 +7,15 @@ const Nav = (props) => {
     const [id, setId] = useState([]);
 
     const PrintUsingCode = async ()=>{
-
-        const receive = await axios.get(`https://printwalah.onrender.com/fetch-url/${id}}`)
+        
+        const receive = await axios.get(`https://printwalah.onrender.com/fetch-url/${id}`)
+         console.log(receive)
+         console.log("id = ",id)
 
         try{
 
             if(receive){
+                console.log(receive.data.unique_data[0].file_url)
                  props.getdata(receive.data.unique_data[0].file_url)
             }
             else{
