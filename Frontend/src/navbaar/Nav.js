@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import './nav.css'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
 
-const Nav = () => {
+const Nav = (props) => {
 
     const [id, setId] = useState([]);
-    const navigation = useNavigate()
 
     const PrintUsingCode = async ()=>{
 
@@ -15,7 +13,7 @@ const Nav = () => {
         try{
 
             if(receive){
-                navigation('/print',{state:{url:receive.data.unique_data[0].file_url}})
+                 props.getdata(receive.data.unique_data[0].file_url)
             }
             else{
                 alert("File Not Receive Try Again")
