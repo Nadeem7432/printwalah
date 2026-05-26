@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import  './Print.css'
-import { useLocation } from 'react-router-dom';
 
 const Print = (props) => {
 
 
   const iframeRef = useRef(null);
   const [blobUrl,setBlobUrl] = useState(null);
-
-    const location = useLocation();
 
 
   const HandlePrint = ()=>{
@@ -21,9 +18,9 @@ const Print = (props) => {
 
     const loadPdfAsBlob = async ()=>{
 
-        if(props.url || location.state.url){
+        if(props.url){
           try{
-              const response = await fetch(props.url || location.state.url);
+              const response = await fetch(props.url);
               const blobData = await response.blob();
               const localUrl = URL.createObjectURL(blobData);
               setBlobUrl(localUrl);
@@ -39,7 +36,7 @@ const Print = (props) => {
         URL.revokeObjectURL(blobUrl);
       }
     }
-  },[props.url,location])
+  },[props.url])
 
   
   return (
