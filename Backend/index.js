@@ -243,6 +243,13 @@ app.post("/receiveData", async (req, res) => {
 
 // ================================================= GET API START =======================================================
 
+app.gt('/',(req,res)=>{
+
+    res.send({
+        message:"Serer Start"
+    })
+})
+
 app.get('/userdata/:email', async (req, res) => {
     const token = req.params.email
 
