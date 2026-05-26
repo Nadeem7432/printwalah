@@ -10,7 +10,7 @@ const Nav = () => {
 
     const PrintUsingCode = async ()=>{
 
-        const receive = await axios.get(`https://printwalah.onrender.com/${id}`)
+        const receive = await axios.get(`https://printwalah.onrender.com/fetch-url/${id}}`)
 
         try{
 
