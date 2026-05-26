@@ -145,6 +145,14 @@
     padding-bottom: 40px;
 }
 
+.loading_Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+    height: 80%;
+}
+
 .qr_code h3 {
     margin-top: 15px;
     font-size: 2vw;
