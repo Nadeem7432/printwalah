@@ -17,14 +17,14 @@ const App = () => {
 
   const postData = async (data)=>{
 
-    await axios.post("http://localhost:4000/sendData",{
+    await axios.post("https://printwalah.onrender.com/sendData",{
           user_id:data
     })
   } 
 
   useEffect(()=>{
 
-    const mySocket = io('http://localhost:4000');
+    const mySocket = io('https://printwalah.onrender.com');
 
     mySocket.on("connect",()=>{
       console.log("connected to server")
