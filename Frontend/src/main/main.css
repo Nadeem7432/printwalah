@@ -229,7 +229,7 @@
     }
 
     .card {
-        width: 70%;
+        width: 100%;
         height: auto;
         margin: 20px;
         flex-direction: column;
@@ -266,4 +266,26 @@
     .qr_code p{
         font-size: 2vw;
     }
+}
+@media screen and (max-width:557px){
+     .main_left_side{
+            width: 100%;
+        }
+
+    .main_section_right_side {
+        width: 100%;
+    }
+    .qr_code h3 {
+    font-size: 4vw;
+}
+    .qr_code p{
+        font-size: 2.5vw;
+    }
+.info h1 {
+    font-size: 2.5vw;
+}
+
+.info p {
+    font-size:2vw;
+}
 }
