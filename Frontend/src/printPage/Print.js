@@ -39,7 +39,7 @@ const Print = (props) => {
         URL.revokeObjectURL(blobUrl);
       }
     }
-  },[props.url])
+  },[props.url,location])
 
   
   return (
