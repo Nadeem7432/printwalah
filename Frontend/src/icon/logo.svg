@@ -1,0 +1,30 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Printer Icon -->
+  <g transform="translate(10,15)">
+    <!-- Body -->
+    <rect x="0" y="10" width="40" height="25" rx="4" fill="#333"/>
+    
+    <!-- Paper -->
+    <rect x="8" y="0" width="24" height="15" rx="2" fill="#E0E0E0"/>
+    
+    <!-- Output Paper -->
+    <rect x="8" y="30" width="24" height="12" rx="2" fill="#FFFFFF"/>
+    
+    <!-- Color Strip -->
+    <rect x="8" y="32" width="8" height="3" fill="#4CAF50"/>
+    <rect x="16" y="32" width="8" height="3" fill="#FFC107"/>
+    <rect x="24" y="32" width="8" height="3" fill="#2196F3"/>
+  </g>
+
+  <!-- Text: Print -->
+  <text x="65" y="45" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#2E7D32">
+    Print
+  </text>
+
+  <!-- Text: Walah -->
+  <text x="135" y="45" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" fill="#FFC107">
+    Walah
+  </text>
+
+</svg>
