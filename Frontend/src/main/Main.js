@@ -107,12 +107,18 @@ const Main = (props) => {
 
                         <div className='qr_code'>
 
-                            <QRCode
+                           {
+                                props.imageUrl ? 
+                                <QRCode
                                      size="80%"
                                      bgColor='white'
                                      fgColor='black'
                                      value={props.imageUrl}
                             />
+                            : <p className='loading_Text'>Loading...</p>
+
+                            }
+
                             <h3>Scan this QR code</h3>
                             <p>for instant access to your prints!</p>
 
