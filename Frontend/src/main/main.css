@@ -58,21 +58,21 @@
     padding: 10px;
 }
 
-.img{
+.img {
     background-color: #2E7D32;
     border-radius: 50px;
     width: 70px;
     padding: 5px;
 }
 
-.img2{
+.img2 {
     width: 50px;
-    
+
 }
+
 .discription {
-    width: 70%;
+    width: 100%;
     height: 100%;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@
 }
 
 .discription h2 {
-    /* background-color: red; */
+    width: 100%;
     color: #212121;
 }
 
@@ -107,7 +107,6 @@
 
     width: 40%;
     height: 100%;
-    /* background-color: rgb(22, 28, 200); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +136,7 @@
 
 .qr_code {
     width: 80%;
+    height: 70%;
     background-color: white;
     box-shadow: 0px 2px 25px 2px rgba(182, 180, 180, 0.7);
     border-radius: 15px;
@@ -145,12 +145,12 @@
     padding-bottom: 40px;
 }
 
-.loading_Text{
+.loading_Text {
     display: flex;
     justify-content: center;
     align-items: center;
-     width: 100%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
 }
 
 .qr_code h3 {
@@ -201,7 +201,7 @@
 
 .info p {
     color: #666666;
-    font-size:1vw;
+    font-size: 1vw;
 }
 
 @media screen and (max-width:992px) {
@@ -228,16 +228,20 @@
         align-items: center;
     }
 
+    .discription h2 {
+        font-size: 2.5vw;
+    }
+
     .card {
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 20px;
+        margin: 0 10px 20px 10px;
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
 
-    .icon{
+    .icon {
         width: 100%;
     }
 
@@ -261,31 +265,63 @@
     }
 
     .qr_code {
-        margin: 15px 0 15px 0;
+        margin: 15px;
     }
-    .qr_code p{
-        font-size: 2vw;
+
+    .qr_code h3 {
+        font-size: 3vw;
     }
+
+    .qr_code p {
+        font-size: 2.5vw;
+    }
+
+    .info h1 {
+        font-size: 3vw;
+    }
+
+    .info p {
+        font-size: 2.5vw;
+    }
+
 }
-@media screen and (max-width:557px){
-     .main_left_side{
-            width: 100%;
-        }
+
+@media screen and (max-width:557px) {
+
+    .for_align_center {
+        width: 90%;
+
+    }
+
+    .main_left_side {
+        width: 100%;
+    }
+
+    .discription h2 {
+        font-size: 4vw;
+    }
+
+    .card {
+        width: 100%;
+    }
 
     .main_section_right_side {
         width: 100%;
     }
-    .qr_code h3 {
-    font-size: 4vw;
-}
-    .qr_code p{
-        font-size: 2.5vw;
-    }
-.info h1 {
-    font-size: 2.5vw;
-}
 
-.info p {
-    font-size:2vw;
-}
+    .qr_code h3 {
+        font-size: 5vw;
+    }
+
+    .qr_code p {
+        font-size: 3vw;
+    }
+
+    .info h1 {
+        font-size: 5vw;
+    }
+
+    .info p {
+        font-size: 3vw;
+    }
 }
