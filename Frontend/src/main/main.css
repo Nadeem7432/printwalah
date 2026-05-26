@@ -150,12 +150,12 @@
     justify-content: center;
     align-items: center;
      width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 .qr_code h3 {
     margin-top: 15px;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .qr_code p {
@@ -196,7 +196,7 @@
 
 .info h1 {
     color: #212121;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .info p {
