@@ -13,7 +13,10 @@ const App = () => {
 
   const [myid,setId] = useState(null);
   const [FileUrl,setFileUrl] = useState(null);
-  // const [socket,setSocket] = useState(null);
+
+  const receiveData = (navdata)=>{
+    setFileUrl(navdata) 
+  }
 
   const postData = async (data)=>{
 
@@ -49,15 +52,9 @@ const App = () => {
       return (
          <main>
 
-          <Navbaar/>
+          <Navbaar getdata={receiveData}/>
 
-          {/* <Main imageUrl={myid}/> */}
-
-          <Routes>
-               <Route path='/' element={<Main imageUrl={myid}/>}/>
-               <Route path='/print' element={<Print/>}/>
-              
-           </Routes>
+         <Main imageUrl={myid}/>
 
         </main>
   )
