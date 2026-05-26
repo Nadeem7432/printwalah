@@ -243,10 +243,9 @@ app.post("/receiveData", async (req, res) => {
 
 // ================================================= GET API START =======================================================
 
-app.gt('/',(req,res)=>{
-
+app.get("/",(req,res)=>{
     res.send({
-        message:"Serer Start"
+        message:"Server Start"
     })
 })
 
