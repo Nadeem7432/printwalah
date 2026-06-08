@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import Mykey from '../icon/key.svg'
+import Key from '../icon/key.svg'
 import Check from '../icon/check.svg'
 import Qr from '../icon/qr.svg'
 import Print from '../icon/print.svg'
@@ -24,12 +24,12 @@ const Main = (props) => {
             <div className='card'>
 
                         <div className='icon'>
-                          <img src={Qr} className='img' alt='img'/>
+                          <img src={Key} className='img' alt='img'/>
                         </div>
 
                         <div className='discription'>
                             <h2>Print With Unique Code</h2>
-                            <p>Please enter your unique code in the box on the Top right.</p>
+                            <p>Please enter your unique code in the box.</p>
                     
                         </div>
 
@@ -48,7 +48,7 @@ const Main = (props) => {
 
                         <div className='discription'>
                             <h2>Scan the QR Code</h2>
-                            <p>Scan the QR code displayed on the right side.</p>
+                            <p>Scan the QR code displayed on the Desktop.</p>
                     
                         </div>
 
